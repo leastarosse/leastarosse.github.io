@@ -1,0 +1,45 @@
+
+h1{
+    text-align: center;}
+
+h2{text-align: right; margin-right:  5%;}
+
+#intro{
+font-style:italic;  
+}
+h2{
+    text-decoration: underline;
+}
+
+p {
+color: black;
+font-style:normal;
+}
+
+figure{
+    display: flex;
+    align-items: center;
+}
+figcaption{
+    margin: 5%;
+}
+
+img{
+    border-radius: 25%;
+    border: 4px solid black;
+    height: 200px;
+}
+
+body{
+    margin-left: 35px;
+    background-color:rosybrown;
+}
+
+.line{
+    display: flex;
+    justify-content: space-between;
+}
+
+#compétences{
+    justify-content: end;
+}
