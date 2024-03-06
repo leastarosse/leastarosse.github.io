@@ -40,16 +40,38 @@ body{
 
 #compétences{
     justify-content: end;
+    margin-right: 5%;
 }
 
 table{
     text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
 }
 
-caption{
-    text-decoration: solid;
+.styled-table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.styled-table td, .styled-table th {
+    border: 1px solid black;
+    padding: 8px;
 }
 
 .reseau{
+    text-align: center;
+    margin-top: 5% ;
+}
+
+.arguments {
+    display: flex;
+}
+
+.arguments figure{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     text-align: center;
 }
