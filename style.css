@@ -67,6 +67,7 @@ table{
 
 .arguments {
     display: flex;
+    justify-content: center;
 }
 
 .arguments figure{
