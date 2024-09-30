@@ -31,6 +31,24 @@ header > div {
     margin-left: 40px;
 }
 
+@media (max-width: 768px) {
+    header > div {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0;
+    }
+
+    header >div > h1 {
+        display: flex;
+        font-size: larger;
+    }
+
+    .profile-picture{
+        width: min-content;
+        align-self: center;
+    }
+}
+
 header > p {
     font-size: 0.6em;
     margin: 0 15%;
