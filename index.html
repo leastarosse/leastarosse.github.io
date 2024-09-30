@@ -6,6 +6,9 @@
     <meta name="description" content="Secrétaire indépendante offrant des services d'assistance administrative et gestion à distance.">
     <meta name="keywords" content="secrétaire indépendante, assistante virtuelle, services administratifs, gestion à distance, freelance">
     <meta name="author" content="Léa Starosse">
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
     <title>Secrétaire Indépendante - Léa Starosse</title>
     
     <!-- Open Graph for social media -->
@@ -14,92 +17,107 @@
     <meta property="og:type" content="website">
     <meta property="og:image" content="./Photo.jpg">
     <meta property="og:url" content="https://leastarosse.github.io">
-
-    <!-- CSS minimaliste -->
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f5f5f5;
-            color: #333;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #4CAF50;
-            color: white;
-            text-align: center;
-            padding: 20px 0;
-        }
-        nav {
-            text-align: center;
-            margin: 20px 0;
-        }
-        nav a {
-            color: #333;
-            text-decoration: none;
-            margin: 0 15px;
-            font-size: 1.2em;
-        }
-        .container {
-            width: 80%;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        h1, h2 {
-            color: #4CAF50;
-        }
-        footer {
-            background-color: #4CAF50;
-            color: white;
-            text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
 </head>
+
 <body>
 
     <header>
-        <h1>Léa Starosse - Secrétaire Indépendante</h1>
-        <p>Services d'assistance administrative à distance</p>
+        <div>
+            <img src="./Photo.jpg" alt="Photo de profil" height="100" class="profile-picture"/>
+            <h1> Assistante administrative et secrétaire indépendante</h1>
+        </div>
+        <p>➜Je suis là pour vous aider dans les tâches quotidiennes et vous faciliter la vie afin que vous puissiez développer sereinement votre activité.</p>
+        <p>Mon objectif ? 🚀 Vous offrir une assistance personnalisée en fonction de vos besoins.</p>
     </header>
 
     <nav>
-        <a href="#services">Services</a>
         <a href="#about">À propos</a>
-        <a href="#contact">Contact</a>
+        <a href="#services">Mes services</a>
+        <a href="#mes tarifs"> Mes tarifs</a>
+        <a href="#contact">Me contacter</a>
     </nav>
 
     <div class="container">
-        <!-- Section Services -->
-        <section id="services">
-            <h2>Mes Services</h2>
-            <p>En tant que secrétaire indépendante, je propose une large gamme de services pour vous aider à gérer votre entreprise de manière plus efficace :</p>
-            <ul>
-                <li>Gestion des emails et du calendrier</li>
-                <li>Préparation de documents et rapports</li>
-                <li>Suivi des dossiers et relances clients</li>
-                <li>Organisation des réunions et événements</li>
-                <li>Assistance administrative personnalisée</li>
-            </ul>
-        </section>
+       
 
         <!-- Section À propos -->
         <section id="about">
             <h2>À propos de moi</h2>
-            <p>Je suis une secrétaire indépendante avec plus de 5 ans d'expérience dans la gestion administrative. Mon objectif est de fournir un soutien administratif fiable et efficace pour vous permettre de vous concentrer sur vos priorités professionnelles.</p>
+            <p>Après un BTS gestion de la PME et un titre professionnel assistante des ressources humaines, j'ai pu acquérir de nombreuses compétences.
+                Professionnellement, je suis sur le marché du travail depuis plus de 5ans maintenant et j'ai pu durant ces années occuper divers postes tels qu'assistante de direction, responsable des ressources humaines ou encore chargée de recrutement.</p>
+
+                <p>Ces expériences m'ont toutes beaucoup apporté, autant sur le développement de mes compétences que sur le côté humain. 
+                Grâce à ma patience et mon calme je peux gérer facilement les conflits et la pression. Je m'adapte facilement afin de répondre aux mieux aux besoins qui m'entourent.
+
+                Si vous souhaitez en savoir plus sur mon parcours et mes compétences je vous invite à visiter mon linkedin ou tout simplement m'envoyer directement un email 💌
+            </p>
+        </section>
+
+         <!-- Section Services -->
+         <section id="services">
+            <h2>Mes Services</h2>
+            <p>Vous trouverez ci-dessous une liste non exhaustive des services que je vous propose, si vous souhaitez avoir plus d'informations sur un service indiqué ou non n'hésitez pas à me contacter je vous répondrai avec plaisir :</p>
+            <ul>
+                <h4>Gestion administrative :</h4>
+                <li>Gestion dossiers clients/fournisseurs, SAV, réclamations...</li>
+                <li>Etablissement et suivi des devis, factures, avoirs</li>
+                <li>Création et mise à jour de base de données</li>
+                <li>Organisation agenda et planning</li>
+                
+                <h4>Pré comptabilité :</h4>
+                <li>Suivi et relance des factures impayées</li>
+                <li>Suivi facturations fournisseurs</li>
+                <li>Gestion et suivi des tableaux de bord</li>
+                <li>Préparation et transmission des éléments nécessaires au comptable</li>
+
+                <h4>Secrétariat et RH :</h4>
+                <li>Gestion des emails, courriers...</li>
+                <li>Prise et annulation de rendez-vous</li>
+                <li>Rédactions et mise en page de documents, courriers, compte-rendu...</li>
+                <li>Suivi des éléments relatifs des dossiers salariés</li>
+                <li>Classement et archivage de dossiers</li>
+
+                <h4>Les petits plus :</h4>
+                <li>Accueil physique et téléphonique</li>
+                <li>Retranscription</li>
+            </ul>
+        </section>
+
+        <!-- Section Mes tarifs -->
+        <section id="mes tarifs">
+            <h2>Mes tarifs</h2>
+            <p>Dans le but de vous offrir une prestation adaptée à vos besoins nous définirons ensemble les prestations, le nombres d'heures et la durée correspondant à votre demande.
+                Un premier devis vous seras alors envoyé, les prestations étant facturées principalement à l'heure.
+                La facture est établie en fin de mois.
+                Si vos besoins changent, un nouveau devis pourra être fait.</p>
+            <ul>
+                <li>Les tarifs proposés ne sont pas soumis à la TVA selon l'article 293B du CGI</li>
+                <li>Des forfaits spécifiques pour les praticiens de santé sont possibles</li>
+
+            <h4>Mobilité</h4>
+            <p>Je travaille en majorité en distanciel mais dans certains cas je peux me déplacer.
+                Je suis mobile sur Lille et sa périphérie (Mons en baroeul, Villeneuve d'Ascq, Croix, la Madeleine...). N'hésitez pas à me préciser vos besoins en me contactant directement.
+            </p>
+            </ul>
         </section>
 
         <!-- Section Contact -->
         <section id="contact">
             <h2>Contactez-moi</h2>
-            <p>Pour en savoir plus sur mes services ou pour discuter de vos besoins spécifiques, vous pouvez me contacter via :</p>
+            <p>Pour en savoir plus sur mes services ou pour discuter de vos besoins, vous pouvez me contacter directement :</p>
             <ul>
-                <li>Email : <a href="mailto:starosse.services@gmail.com">starosse.services@gmail.com</a></li>
-                <li>Téléphone : <a href="tel:06 13 54 25 65">06  13 54 25 65 </a></li>
+                <li>Par Email : <a href="mailto:starosse.services@gmail.com">starosse.services@gmail.com</a></li>
+                <li>Par message : <a href="tel:06 13 54 25 65">06  13 54 25 65 </a></li>
             </ul>
+        </section>
+
+        <section id="social">
+            <h2>Retrouvez-moi également sur les réseaux sociaux</h2>
+            <div class="social-links">
+                <a href="https://www.facebook.com/profile.php?id=61566524936315" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://x.com/StarosseLea" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/l%C3%A9a-starosse-12175a23a/" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+            </div>
         </section>
     </div>
 
