@@ -3,17 +3,15 @@
     --rose: #C67F89;
     --rose-pale: #F2D5DC;
     --beige: #D6BCA5;
-    --taupe: #B39084;
     --bordeaux: #734158;
-    --gris-clair: #F5F5F5;
     --blanc: #ffffff;
 }
 
 /* Style général */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: var(--gris-clair);
-    color: var(--taupe);
+    background-color: var(--blanc);
+    color: var(--bordeaux);
     margin: 0;
     padding: 0;
 }
@@ -144,7 +142,7 @@ a.button:hover {
 
 /* Footer */
 footer {
-    background-color: var(--taupe);
+    background-color: var(--rose);
     color: var(--blanc);
     text-align: center;
     padding: 20px 0;
