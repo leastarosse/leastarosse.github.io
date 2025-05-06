@@ -919,3 +919,20 @@ iconify-icon.quote {
   overflow: hidden; /* Coupe les coins si nécessaire */
 }
 
+#Encoreplus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.info-box {
+  background-color: #f8f9fa; /* couleur de fond du rectangle */
+  border-radius: 15px; /* coins arrondis */
+  padding: 20px 30px; /* marge intérieure */
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* ombre douce pour donner de la profondeur */
+  width: 80%; /* ajuster la largeur du rectangle */
+  max-width: 600px; /* largeur maximale */
+
+}
