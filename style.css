@@ -936,3 +936,59 @@ iconify-icon.quote {
   max-width: 600px; /* largeur maximale */
 
 }
+
+/* Pages tarifs */
+
+.pricing-container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      width: 250px;
+      overflow: hidden;
+    }
+
+    .card-header {
+      color: white;
+      padding: 20px;
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+
+    .card-body {
+      padding: 1em;
+    }
+
+    .basique {
+      background-color: #F5A6C7;
+    }
+
+    .standard {
+      background-color: #e64688;
+    }
+
+    .prime {
+      background-color: #CA1562;
+    }
+
+    .price {
+      font-size: 2em;
+      margin: 20px 0;
+    }
+
+    .features {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 20px 0;
+    }
+
+    .features li {
+      padding: 8px 0;
+      border-top: 1px solid #eee;
+    }
