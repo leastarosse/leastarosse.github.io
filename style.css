@@ -1021,3 +1021,67 @@ iconify-icon.quote {
   color: #e64688;
   border: 2px solid #e64688;
 }
+
+/* Pages Mes articles */
+
+    h1 {
+      text-align: center;
+      margin: 40px 0 20px;
+      font-size: 2.2em;
+    }
+
+    .articles-container {
+      max-width: 1000px;
+      margin: 0 auto 80px;
+      padding: 0 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+    }
+
+    .article-card {
+      background-color: #fff;
+      display: flex;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      flex-wrap: wrap;
+    }
+
+    .article-card img {
+      width: 100%;
+      max-width: 300px;
+      object-fit: cover;
+      height: auto;
+    }
+
+    .article-content {
+      flex: 1;
+      padding: 20px;
+    }
+
+    .article-content h2 {
+      margin-top: 0;
+      font-size: 1.4em;
+    }
+
+    .article-content p {
+      color: #666;
+    }
+
+    .meta {
+      font-size: 0.85em;
+      color: #aaa;
+      margin: 10px 0;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 16px;
+      background-color: #e64688;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+    }

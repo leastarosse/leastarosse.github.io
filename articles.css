@@ -1,0 +1,13 @@
+.article  {
+  margin: 0 10%;
+}
+
+.article  h2  {
+  text-align: center;
+  padding: 2%;
+}
+
+.article  .info-box  {
+  width: 70%;
+  max-width: none;
+}
