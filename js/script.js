@@ -116,9 +116,5 @@
       duration: 1000,
       once: true,
     });
-
-    // DateTimePicker
-    new DateTimePickerComponent.DatePicker('select-arrival-date');
-    new DateTimePickerComponent.DatePicker('select-departure-date');
   });
 })(jQuery);
