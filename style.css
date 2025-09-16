@@ -491,25 +491,6 @@ svg.social:hover {
   pointer-events: none;
 }
 
-
-/* modal video override
-------------------------------------------------------------- */
-.modal-dialog {
-  max-width: 800px;
-  margin: auto;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-}
-
-.modal-content {
-  padding: 0;
-  background-color: #f5f3ef;
-  border: none;
-  border-radius: 0
-}
-
-
 /* Preloader
 ------------------------------------------------------------- */
 .preloader {
@@ -533,7 +514,7 @@ svg.social:hover {
   margin: -75px 0 0 -75px;
   border-radius: 50%;
   border: 3px solid transparent;
-  border-top-color: #D16806;
+  border-top-color: #F86295;
   -webkit-animation: spin 2s linear infinite;
   animation: spin 2s linear infinite;
 }
@@ -547,7 +528,7 @@ svg.social:hover {
   bottom: 5px;
   border-radius: 50%;
   border: 3px solid transparent;
-  border-top-color: #ECB27B;
+  border-top-color: #F86295;
   -webkit-animation: spin 3s linear infinite;
   animation: spin 3s linear infinite;
 }
@@ -561,7 +542,7 @@ svg.social:hover {
   bottom: 15px;
   border-radius: 50%;
   border: 3px solid transparent;
-  border-top-color: #f7dac1;
+  border-top-color: #F86295;
   -webkit-animation: spin 1.5s linear infinite;
   animation: spin 1.5s linear infinite;
 }
@@ -593,10 +574,6 @@ svg.social:hover {
     transform: rotate(360deg);
   }
 }
-
-/*----------------------------------------------*/
-/* 4 SITE STRUCTURE */
-/*----------------------------------------------*/
 
 /* 4.1 Header
 /*----------------------------------------------*/
@@ -764,102 +741,6 @@ div.datetime-container button span.month-day {
   transform: scale(1.1);
 }
 
-
-/*----------------------------------------------*/
-/* 5 PAGES STYLE */
-/*----------------------------------------------*/
-
-/*--------------------------------------------------------------
-5.1 About page 
---------------------------------------------------------------*/
-
-.breadcrumb-item+.breadcrumb-item::before {
-  color: var(--dark-color);
-}
-
-svg.play-icon {
-  animation: play 1.5s alternate infinite ease-in;
-}
-
-@keyframes play {
-  0% {
-    transform: scale(.8);
-  }
-  
-  100% {
-    transform: scale(1.1);
-  }
-  
-}
-
-/*--------------------------------------------------------------
-5.2 Blog page 
---------------------------------------------------------------*/
-.pagination {
-  --bs-pagination-color: var(--black-color);
-  --bs-pagination-hover-color: #fff;
-  --bs-pagination-hover-bg: var(--primary-color);
-  --bs-pagination-hover-border-color: var(--primary-color);
-  --bs-pagination-focus-color: #fff;
-  --bs-pagination-focus-bg: var(--primary-color);
-  --bs-pagination-focus-box-shadow: none;
-  --bs-pagination-active-bg: var(--primary-color);
-  --bs-pagination-active-border-color: var(--primary-color);
-}
-
-
-/*--------------------------------------------------------------
-5.3 Booking page 
---------------------------------------------------------------*/
-.form-check-input:checked {
-  background-color: var(--primary-color);
-  border-color: var(--primary-color);
-}
-
-.form-check-input:focus {
-  box-shadow: none;
-}
-
-/*--------------------------------------------------------------
-5.4 Gallery page 
---------------------------------------------------------------*/
-button.filter-button {
-  border: 0;
-  background: transparent;
-  text-transform: uppercase;
-  transition: all 0.5s ease-in-out;
-  border-radius: 20px;
-}
-
-button.filter-button.active,
-button.filter-button:hover {
-  color: var(--bs-light);
-  background: var(--primary-color);
-}
-
-
-/*--------------------------------------------------------------
-5.5 Reviews page
---------------------------------------------------------------*/
-
-.reviews-components {
-  box-shadow: 0px 12px 90px rgba(12, 12, 12, 0.06);
-}
-
-iconify-icon.quote {
-  font-size: 60px;
-  color: var(--primary-color);
-}
-
-.rate {
-  color: var(--primary-color);
-}
-
-
-
-/*--------------------------------------------------------------
-5.6 FAQs page 
---------------------------------------------------------------*/
 
 /* accordian style override  */
 
@@ -1086,4 +967,19 @@ iconify-icon.quote {
       font-weight: bold;
     }
 
-    
+  /* --- Section A propos --- */
+.apropos h2 {
+  color: #e64688;
+  text-decoration: solid;
+}
+.valeurs {
+  display: flex;
+  justify-content: center;
+  gap: 2rem; /* espace horizontal entre les valeurs */
+  margin-top: 1rem;
+  flex-wrap: wrap; /* permet le retour à la ligne si écran trop petit */
+}
+.valeurs span {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
