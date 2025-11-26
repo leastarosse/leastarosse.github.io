@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://leastarosse.github.io/sitemap.xml

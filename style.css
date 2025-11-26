@@ -619,66 +619,6 @@ a.nav-link:hover {
 }
 
 
-/* 4.2 Billboard
-/*----------------------------------------------*/
-
-/* date */
-div.datetime-container,
-div.datetime-container * {
-  box-sizing: border-box;
-  font-family: var(--body-font);
-}
-
-div.datetime-container button.date,
-div.datetime-container button.time {
-  background-color: transparent;
-  border: 1px solid #E9E9E9;
-  border-radius: 8px;
-  text-transform: capitalize;
-  text-align: start;
-  padding: 8px 20px;
-  color: var(--gray-color);
-  letter-spacing: 0.1rem;
-}
-
-div.datetime-container button>span {
-  display: inline-block;
-  margin: 0 -6px;
-}
-
-div.datetime-container button span.week-day {
-  font-size: 16px;
-  text-align: right;
-}
-
-div.datetime-container button span.week-day::after {
-  content: ",";
-  display: inline-block;
-}
-
-div.datetime-container button span.month {
-  font-size: 16px;
-  text-align: right;
-}
-
-div.datetime-container button span.hours,
-div.datetime-container button span.month-day {
-  font-size: 16px;
-  text-align: center;
-  width: 45px;
-}
-
-.month br {
-  display: none;
-}
-
-@media (max-width: 1500px) {
-  div.picker {
-    width: max-content;
-  }
-}
-
-
 /* 4.3 Rooms Section
 /*----------------------------------------------*/
 .room-item img.post-image {
@@ -725,56 +665,6 @@ div.datetime-container button span.month-day {
 }
 
 
-/* 4.5 Blog Section
-/*----------------------------------------------*/
-
-.blog-post img.blog-img {
-  -webkit-transform: scale(1);
-  transform: scale(1);
-  -webkit-transition: .3s ease-in-out;
-  transition: all 0.5s ease-in-out;
-}
-
-.blog-post:hover img.blog-img {
-  opacity: 0.5;
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
-}
-
-
-/* accordian style override  */
-
-.accordion {
-  --bs-accordion-border-color: var(--primary-color);
-  --bs-accordion-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, border-radius 0.15s ease;
-  --bs-accordion-btn-icon: url('https://api.iconify.design/ion/caret-down.svg?color=%23d06051&width=30');
-  --bs-accordion-btn-active-icon: url('https://api.iconify.design/ion/caret-down.svg?color=%23d06051&width=30');
-  --bs-accordion-border-radius: 0px;
-}
-
-.accordion-header {
-  margin-bottom: 0;
-  border-top: 1px solid var(--primary-color);
-}
-
-.accordion-button {
-  font-family: var(--heading-font);
-  font-weight: var(--heading-font-weight);
-  color: var(--heading-color);
-  line-height: var(--heading-line-height);
-  letter-spacing: 0.065rem;
-  text-transform: uppercase;
-}
-
-.accordion-button:focus {
-  box-shadow: none;
-}
-
-.accordion-button:not(.collapsed) {
-  color: var(--heading-color);
-  background-color: transparent;
-  box-shadow: none;
-}
 .back-to-top {
   position: fixed;
   bottom: 20px;
