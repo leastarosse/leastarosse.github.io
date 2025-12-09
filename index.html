@@ -11,7 +11,10 @@
   <meta name="keywords" content="secrétaire indépendante, assistante administrative, assistante indépendante, assistante virtuelle, services administratifs, gestion à distance, freelance, gestionnaire locatif, assistante rh, chargée de recrutement">
   <meta name="description" content="Secrétaire indépendante offrant des services d'assistance administrative à distance.">
   <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-  
+
+  <!-- Preload LCP image -->
+  <link rel="preload" href="images/resized_secretary_image.png" as="image" fetchpriority="high">
+
   <!-- Open Graph for social media -->
   <meta property="og:title" content="Secrétaire Indépendante - Léa Starosse">
   <meta property="og:description" content="Découvrez les services d'une assistante administrative indépedante professionnelle et efficace.">
@@ -25,8 +28,8 @@
   <!--Link Swiper's CSS ================================================== -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   
-  <!--Link AOS's CSS ================================================== -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!--Link AOS's CSS (non-blocking) ================================================== -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" media="print" onload="this.media='all'">
   
   <!-- Style Sheet ================================================== -->
   <link rel="stylesheet" type="text/css" href="style.css">
@@ -90,7 +93,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <path fill="currentColor"
       d="M9.5 15.584V8.416a.5.5 0 0 1 .77-.42l5.576 3.583a.5.5 0 0 1 0 .842l-5.576 3.584a.5.5 0 0 1-.77-.42Z" />
       <path fill="currentColor"
-      d="M1 12C1 5.925 5.925 1 12 1s11 4.925 11 11s-4.925 11-11 11S1 18.0j'ai 75 1 12m11-9.5A9.5 9.5 0 0 0 2.5 12a9.5 9.5 0 0 0 9.5 9.5a9.5 9.5 0 0 0 9.5-9.5A9.5 9.5 0 0 0 12 2.5" />
+      d="M1 12C1 5.925 5.925 1 12 1s11 4.925 11 11s-4.925 11-11 11S1 18.075 1 12m11-9.5A9.5 9.5 0 0 0 2.5 12a9.5 9.5 0 0 0 9.5 9.5a9.5 9.5 0 0 0 9.5-9.5A9.5 9.5 0 0 0 12 2.5" />
     </symbol>
     
     <symbol xmlns="http://www.w3.org/2000/svg" id="navbar-icon" viewBox="0 0 16 16">
@@ -200,36 +203,36 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           </ul>
           <ul class="social-links d-flex flex-wrap list-unstyled m-0 ">
             <li class="social">
-              <a href="https://www.facebook.com/profile.php?id=61566524936315">
-                <svg class="social" width="30" height="30">
+              <a href="https://www.facebook.com/profile.php?id=61566524936315" aria-label="Facebook">
+                <svg class="social" width="30" height="30" aria-hidden="true">
                   <use xlink:href="#facebook"></use>
                 </svg>
               </a>
             </li>
             <li class="social ms-4">
-              <a href="https://x.com/StarosseLea">
-                <svg class="social" width="30" height="30">
+              <a href="https://x.com/StarosseLea" aria-label="X (Twitter)">
+                <svg class="social" width="30" height="30" aria-hidden="true">
                   <use xlink:href="#twitter"></use>
                 </svg>
               </a>
             </li>
             <li class="social ms-4">
-              <a href="https://www.linkedin.com/in/l%C3%A9a-starosse-12175a23a/">
-                <svg class="social" width="30" height="30">
+              <a href="https://www.linkedin.com/in/l%C3%A9a-starosse-12175a23a/" aria-label="LinkedIn">
+                <svg class="social" width="30" height="30" aria-hidden="true">
                   <use xlink:href="#linkedin"></use>
                 </svg>
               </a>
             </li>
             <li class="social ms-4">
-              <a href="https://www.instagram.com/secretaire_sans_bureau?igsh=MXV2emdjZG0y-ZndvdQ==">
-                <svg class="social" width="30" height="30">
+              <a href="https://www.instagram.com/secretaire_sans_bureau?igsh=MXV2emdjZG0y-ZndvdQ==" aria-label="Instagram">
+                <svg class="social" width="30" height="30" aria-hidden="true">
                   <use xlink:href="#instagram"></use>
                 </svg>
               </a>
             </li>
             <li class="social ms-4">
-              <a href="https://www.youtube.com/@L%C3%A9a-secr%C3%A9taire">
-                <svg class="social" width="30" height="30">
+              <a href="https://www.youtube.com/@L%C3%A9a-secr%C3%A9taire" aria-label="YouTube">
+                <svg class="social" width="30" height="30" aria-hidden="true">
                   <use xlink:href="#youtube"></use>
                 </svg>
               </a>
@@ -243,10 +246,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="container-fluid padding-side">
         <div class="d-flex justify-content-between align-items-center w-100">
           <a class="navbar-brand" href="index.html">
-            <img src="images/resized_secretary_image.png" class="logo img-fluid" width="120px" title="logo de secrétaire" alt="logo de secrétaire">
+            <img src="images/resized_secretary_image.png" class="logo img-fluid" width="120px" title="logo de secrétaire" alt="logo de secrétaire" fetchpriority="high">
           </a>
           <button class="navbar-toggler border-0 d-flex d-lg-none order-3 p-2 shadow-none" type="button"
-          data-bs-toggle="offcanvas" data-bs-target="#bdNavbar" aria-controls="bdNavbar" aria-expanded="false">
+          data-bs-toggle="offcanvas" data-bs-target="#bdNavbar" aria-controls="bdNavbar" aria-expanded="false" aria-label="Ouvrir le menu de navigation">
           <svg class="navbar-icon" width="60" height="60">
             <use xlink:href="#navbar-icon"></use>
           </svg>
@@ -509,29 +512,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <p class="mt-3">Je m'appelle Léa et mon objectif est de répondre au mieux à vos besoins.</p>
                 <ul class="social-links d-flex flex-wrap list-unstyled mt-4 mb-0">
                   <li>
-                    <a href="https://www.facebook.com/profile.php?id=61566524936315">
-                      <svg class="social me-4" width="30" height="30">
+                    <a href="https://www.facebook.com/profile.php?id=61566524936315" aria-label="Facebook">
+                      <svg class="social me-4" width="30" height="30" aria-hidden="true">
                         <use xlink:href="#facebook"></use>
                       </svg>
                     </a>
                   </li>
                   <li>
-                    <a href="https://x.com/StarosseLea">
-                      <svg class="social me-4" width="30" height="30">
+                    <a href="https://x.com/StarosseLea" aria-label="X (Twitter)">
+                      <svg class="social me-4" width="30" height="30" aria-hidden="true">
                         <use xlink:href="#twitter"></use>
                       </svg>
                     </a>
                   </li>
                   <li>
-                    <a href="https://www.linkedin.com/in/l%C3%A9a-starosse-12175a23a/">
-                      <svg class="social me-4" width="30" height="30">
+                    <a href="https://www.linkedin.com/in/l%C3%A9a-starosse-12175a23a/" aria-label="LinkedIn">
+                      <svg class="social me-4" width="30" height="30" aria-hidden="true">
                         <use xlink:href="#linkedin"></use>
                       </svg>
                     </a>
                   </li>
                   <li>
-                    <a href="https://www.instagram.com/secretaire_sans_bureau?igsh=MXV2emdjZG0y-ZndvdQ==">
-                      <svg class="social me-4" width="30" height="30">
+                    <a href="https://www.instagram.com/secretaire_sans_bureau?igsh=MXV2emdjZG0y-ZndvdQ==" aria-label="Instagram">
+                      <svg class="social me-4" width="30" height="30" aria-hidden="true">
                         <use xlink:href="#instagram"></use>
                       </svg>
                     </a>
@@ -573,8 +576,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           
           <script src="js/jquery-3.7.1.min.js"></script>
           <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
-          <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-          <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+          <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js" defer></script>
+          <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
           <script type="text/javascript" src="js/script.js"></script>
           <script type="text/javascript" src="js/scriptfleche.js"></script>
         </body>
